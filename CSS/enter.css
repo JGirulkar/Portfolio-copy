@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    color: white;
+    line-height: 2em;
+}
+
+.navbar ul {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-right: 2em;
+    height: 5em;
+    width: 100vw;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+    padding: 0em 2em;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #fbf500;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fbf500;
+    text-underline-offset: 0.5em;
+}
+
+
+/* .underline {
+    display: inline-block;
+    background: #fbf500;
+    height: 1px;
+    width: auto;
+    opacity: 0;
+} */
+
+.front {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: linear-gradient(to right, rgba(126, 126, 126, 0), rgba(126, 126, 126, 0.5)), url(/Portfolio/images/enter.bg2.2.jpg); */
+    background: url(/Portfolio/images/enter.bg4.1.jpg);
+    background-size: 100vw 100vh;
+    height: 100vh;
+    /* filter: opacity(0.5); */
+}
+
+.intro {
+    padding-left: 5em;
+}
+
+.intro h1 {
+    font-family: 'Share Tech Mono', monospace;
+    /* font-family: 'Kanit', sans-serif; */
+    font-size: 4em;
+    padding-bottom: 1em;
+    /* font-family: 'Roboto', sans-serif; */
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: bolder;
+}
+
+.hey {
+    background-image: linear-gradient(to right, #ee5e4e 0%, #e01a6d 100%);
+    background-image: linear-gradient(to left, #19d2b9 0%, #feff01 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0em 0em 0.5em linear-gradient(to left, #19d2b9 0%, #feff01 100%);
+}
+
+.intro p {
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Cascadia Code', sans-serif; */
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-size: 1.2em;
+    animation-name: tube;
+    animation-duration: 3.5s;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: linear; */
+    opacity: 0;
+    /* text-shadow: 0em 0em 2em yellow; */
+}
+
+@keyframes tube {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.6;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    /* 30% {
+        opacity: 1;
+    } */
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* .string {
+    color: rgb(250, 250, 39);
+}
+
+.braces {
+    color: rgb(24, 167, 192);
+} */
+
+.for,
+.out {
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+}
+
+.code {
+    font-family: 'Inconsolata', monospace;
+}
+
+.design {
+    font-family: 'Love Light', cursive;
+}
+
+.about_me {
+    text-align: center;
+    padding: 4em 2em;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.about_me h1 {
+    letter-spacing: 0.2em;
+    padding-bottom: 1em;
+    /* color: #fbf500; */
+    text-decoration: underline;
+    text-decoration-color: #fbf500;
+    text-underline-offset: 0.5em;
+}
+
+.skills_heading {
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 0.2em;
+    padding-bottom: 2em;
+    /* color: #fbf500; */
+    text-decoration: underline;
+    text-decoration-color: #fbf500;
+    text-underline-offset: 0.5em;
+}
+
+.my_skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 0em 2em;
+}
+
+.sec_skills {
+    text-align: center;
+    padding-bottom: 10em;
+    padding-top: 4em;
+}
+
+.write {
+    padding: 2em 2em;
+    text-align: center;
+    /* width: 20em; */
+    /* background-image: linear-gradient(to right, #ee5e4e 0%, #e01a6d 100%); */
+}
+
+.write:hover .card {
+    transform: rotateY(.5turn);
+}
+
+.write h1 {
+    text-align: center;
+    color: #fbf500;
+    padding-bottom: 0.7em;
+}
+
+.card {
+    position: relative;
+    padding: 2em 2em;
+    width: 20em;
+    height: 20em;
+    transition: transform 3s;
+    background-image: linear-gradient(to right, #ee5e4e 0%, #e01a6d 100%);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.technical,
+.soft {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    width: 20em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.soft {
+    transform: rotateY(.5turn);
+}
+
+.title {
+    transform: translateZ(5em);
+}
+
+.card p {
+    transform: translateZ(3em);
+}
+
+.write::after {
+    content: "Hover softly to see my soft skills.";
+    opacity: 0.7;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    padding: 2em 4em;
+}
+
+.java,
+.html,
+.css,
+.js {
+    width: 4em;
+    height: 4em;
+}
+
+.lets_chat {
+    /* background-image: linear-gradient(to left, #19d2b9 0%, #feff01 100%); */
+    /* background-color: white; */
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #fbf700b9; */
+    /* background-image: linear-gradient(to left, #19d2b9 0%, #feff01 100%); */
+    background-color: rgba(128, 128, 128, 0.534);
+    /* padding: 2em 2em; */
+}
+
+.created {
+    text-align: end;
+    padding: 2em 2em;
+    line-height: none;
+}
+
+.name {
+    text-decoration: underline;
+    text-decoration-color: #fbf500;
+    text-underline-offset: 0.5em;
+}
+
+.git,
+.linkedin,
+.mail,
+.insta,
+.fb {
+    padding: 1em 1em;
+    filter: grayscale(100);
+}
+
+.icons a:hover {
+    filter: grayscale(0);
+}
+
+.icons {
+    padding-top: 2em;
+    padding-left: 5em;
+    text-decoration: none;
+}

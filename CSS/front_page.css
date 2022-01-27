@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.front_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.815); */
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+}
+
+.welcome {
+    letter-spacing: 0.45em;
+    letter-spacing: 1em;
+    font-size: 1.25em;
+}
+
+.welcome h1 {
+    opacity: 0;
+    animation-name: welcome;
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+    transition-property: ease-in-out;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+@keyframes welcome {
+    from {
+        /* color: rgb(43, 41, 41); */
+        opacity: 0;
+    }
+    to {
+        /* color: white; */
+        opacity: 1;
+    }
+}
+
+.welcome p {
+    text-transform: uppercase;
+    padding: 0.6em;
+    /* letter-spacing: 1.5em; */
+    animation-name: jay;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jay {
+    from {
+        /* letter-spacing: 1.5em; */
+        letter-spacing: 2.5em;
+    }
+    to {
+        /* letter-spacing: 0.7em; */
+        letter-spacing: 1.5em;
+    }
+}
+
+.last_appear {
+    opacity: 0;
+    animation-name: last;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes last {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.enter {
+    margin: 2em;
+}
+
+.enter a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 1.25em;
+}
+
+.enter:hover a {
+    color: #FF00FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.contact a {
+    padding: 1.5em;
+    filter: grayscale(100%);
+}
+
+.ig:hover,
+.fb:hover,
+.mail:hover {
+    filter: grayscale(0);
+}
